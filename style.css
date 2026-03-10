@@ -21,8 +21,6 @@
 }
 
 
-
-
 /* =======================
 VARIABLE STYLESHEET 
 ========================== */
@@ -43,7 +41,6 @@ VARIABLE STYLESHEET
     --large-heading-font: "IBM Plex Sans -- Bold", serif;
     --internal-link-font: "IBM Plex Sans -- Medium", serif;
 }
-
 
 
 /* ========== Global Styles ========== */
@@ -87,7 +84,6 @@ h1 {
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 h2 {
@@ -95,7 +91,6 @@ h2 {
     margin-bottom: 1rem;
     text-transform: uppercase;
     color: var(--core-blue);
-
 }
 
 h3 {
@@ -111,6 +106,7 @@ h3 {
     margin-top: 0.4rem;
     font-style: italic;
 }
+
 
 /* ========== Nav ========== */
 
@@ -139,12 +135,20 @@ header {
     height: 50px;
 }
 
+/* NAV LINK + TRANSITION */
+
 .nav__link {
     color: var(--white);
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1rem;
+    transition: color 0.3s ease;
 }
+
+.nav__link:hover {
+    color: var(--core-orange);
+}
+
 
 /* ========== In-Text Links ========== */
 
@@ -159,7 +163,6 @@ a:hover {
 }
 
 
-
 /* ========== Traditions and History Styles ========== */
 
 .section {
@@ -167,6 +170,8 @@ a:hover {
     padding-bottom: 3rem;
     margin-bottom: 3rem;
 
+    /* ANIMATION ADDED HERE */
+    animation: fadeIn 0.8s ease-in;
 }
 
 .section__container {
@@ -193,6 +198,23 @@ a:hover {
 .section__img-container img {
     width: 100%;
     height: auto;
+}
+
+
+/* ========== Animation ========== */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
 
 
