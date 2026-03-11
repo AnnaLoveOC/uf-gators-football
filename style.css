@@ -212,5 +212,19 @@ a:hover {
 }
 
 
+/* ========== Rivalries Images ========== */
 
+.section__text-container_rivalries {
+    width: 75%;
+    object-fit: cover;
+}
 
+.section__img-container_rivalries {
+    width: 25%;
+    object-fit: cover;
+}
+
+.section__img-container_rivalries img {
+    width: 100%;
+    height: auto;
+}
