@@ -20,6 +20,12 @@
     src: url("assets/fonts/ibm-plex-sans.semibold.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "IBM Plex Sans -- Italic";
+    src: url("assets/fonts/ibm-plex-sans.italic.ttf") format("truetype");
+}
+
+
 /* =======================
 VARIABLE STYLESHEET
 ========================== */
@@ -35,6 +41,9 @@ VARIABLE STYLESHEET
     --small-heading-font: "IBM Plex Sans -- SemiBold", serif;
     --large-heading-font: "IBM Plex Sans -- Bold", serif;
     --internal-link-font: "IBM Plex Sans -- Medium", serif;
+    --caption-font: "IBM Plex Sans -- Italic", serif;
+}
+
 
 }
 
@@ -101,7 +110,7 @@ h3 {
     color: var(--caption-grey);
     text-align: center;
     margin-top: 0.4rem;
-    font-style: italic;
+    font-family: var(--caption-font);
 }
 
 /* ========== Navigation ========== */
@@ -192,14 +201,16 @@ a:hover {
 .section__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 1rem;
 }
 
 .section__container-reverse {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row-reverse;
+    margin-top: 1rem;
 }
 
 .section__text-container {
@@ -208,6 +219,7 @@ a:hover {
 
 .section__img-container {
     width: 48%;
+    object-fit: cover;
 }
 
 .section__img-container img {
@@ -215,11 +227,17 @@ a:hover {
     height: auto;
 }
 
+.section__container-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+
 /* ========== Animation ========== */
 
 @keyframes fadeIn {
 
-    from {
+   from {
         opacity: 0;
         transform: translateY(10px);
     }
@@ -229,4 +247,22 @@ a:hover {
         transform: translateY(0);
     }
 
+}
+   
+
+/* ========== Rivalries Images ========== */
+
+.section__text-container_rivalries {
+    width: 70%;
+    object-fit: cover;
+}
+
+.section__img-container_rivalries {
+    width: 25%;
+    object-fit: cover;
+}
+
+.section__img-container_rivalries img {
+    width: 100%;
+    height: auto;
 }
