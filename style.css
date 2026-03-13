@@ -45,8 +45,6 @@ VARIABLE STYLESHEET
 }
 
 
-}
-
 /* ========== Global Styles ========== */
 
 * {
@@ -232,6 +230,7 @@ a:hover {
     flex-direction: column;
     margin-top: 1rem;
     gap: 1rem;
+}
 
 /* ========== Animation ========== */
 
