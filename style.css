@@ -228,3 +228,15 @@ a:hover {
     width: 100%;
     height: auto;
 }
+
+/* ========== List ========== */
+
+ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
