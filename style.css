@@ -25,7 +25,6 @@
     src: url("assets/fonts/ibm-plex-sans.italic.ttf") format("truetype");
 }
 
-
 /* =======================
 VARIABLE STYLESHEET
 ========================== */
@@ -43,7 +42,6 @@ VARIABLE STYLESHEET
     --internal-link-font: "IBM Plex Sans -- Medium", serif;
     --caption-font: "IBM Plex Sans -- Italic", serif;
 }
-
 
 /* ========== Global Styles ========== */
 
@@ -81,7 +79,6 @@ h1 {
     font-style: normal;
     letter-spacing: 0.05em;
 }
-
 
 h2 {
     font-family: var(--large-heading-font);
@@ -146,13 +143,10 @@ header {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-
 .nav__logo img:hover {
     transform: scale(1.08);
     filter: brightness(1.1);
 }
-
-/* NAV LINKS */
 
 .nav__link {
     color: var(--white);
@@ -163,8 +157,6 @@ header {
     border-bottom: 3px solid transparent;
     transition: border-bottom 0.3s ease;
 }
-
-/* IMPORTANT: prevent global underline */
 
 .nav__link:hover {
     border-bottom: 3px solid var(--core-orange);
@@ -178,7 +170,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: var(--core-blue);
     border-top: solid 4px var(--core-orange);
 }
@@ -186,12 +177,9 @@ header {
 .footer__copyright {
     color: var(--white);
     font-size: 0.9rem;
-    font-family: (var--main-font);
 }
 
-
 /* ========== Hero Section ========== */
-
 
 .hero {
   background-size: cover;
@@ -225,7 +213,6 @@ header {
         url(assets/img/the-swamp.jpg);
 }
 
-
 .hero__container {
     max-width: 1200px;
 }
@@ -234,7 +221,6 @@ header {
     color: var(--white);
     font-family: "IBM Plex Sans -- Medium", serif;
 }
-
 
 /* ========== General Links ========== */
 
@@ -290,7 +276,6 @@ a:hover {
     align-items: flex-start;
 }
 
-
 .section__container--reverse {
     flex-direction: row-reverse;
 }
@@ -301,7 +286,6 @@ a:hover {
 
 .section__img-container {
     width: 48%;
-    object-fit: cover;
 }
 
 .section__img-container img {
@@ -316,38 +300,18 @@ a:hover {
     gap: 1rem;
 }
 
-/* ========== Animation ========== */
-
-@keyframes fadeIn {
-
-   from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-}
-   
-
 /* ========== Rivalries Images ========== */
 
 .section__text-container--rivalries {
     width: 70%;
-    object-fit: cover;
 }
 
 .section__img-container--rivalries {
     width: 25%;
-    object-fit: cover;
 }
 
 .section__img-container--rivalries img {
     width: 100%;
-    height: auto;
 }
 
 /* ========== Players Page ========== */
@@ -387,7 +351,6 @@ a:hover {
 .player-card__number {
     color: var(--core-orange);
     font-family: var(--small-heading-font);
-    margin-bottom: 0.0625rem;
 }
 
 .player-card__name {
@@ -409,5 +372,58 @@ a:hover {
 .stat-label {
     font-family: var(--small-heading-font);
     color: var(--core-blue);
-    margin-right: 0.25rem;
+}
+
+/* =========================
+Responsive Design
+========================= */
+
+@media (max-width: 900px) {
+
+  main {
+    padding: 2rem;
+  }
+
+  .section__container,
+  .section__container--reverse {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section__text-container,
+  .section__img-container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .nav__menu {
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
 }
