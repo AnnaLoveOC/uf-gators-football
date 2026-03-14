@@ -186,7 +186,7 @@ header {
 .footer__copyright {
     color: var(--white);
     font-size: 0.9rem;
-    font-family: var(--main-font);
+    font-family: (var--main-font);
 }
 
 
@@ -198,7 +198,7 @@ header {
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: center;
   margin-bottom: 2rem;
@@ -218,6 +218,22 @@ header {
         url(assets/img/gator-walk.jpg);
 }
 
+.hero--home {
+    height: 100vh;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)),
+        url(assets/img/the-swamp.jpg);
+}
+
+
+.hero__container {
+    max-width: 1200px;
+}
+
+.hero__text {
+    color: var(--white);
+    font-family: "IBM Plex Sans -- Medium", serif;
+}
 
 
 /* ========== General Links ========== */
