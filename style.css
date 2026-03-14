@@ -171,6 +171,24 @@ header {
     text-decoration: none;
 }
 
+/* ========== Footer ========== */
+
+.footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--core-blue);
+    border-top: solid 4px var(--core-orange);
+}
+
+.footer__copyright {
+    color: var(--white);
+    font-size: 0.9rem;
+    font-family: var(--main-font);
+}
+
 
 /* ========== Hero Section ========== */
 
