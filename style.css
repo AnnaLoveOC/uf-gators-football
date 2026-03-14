@@ -230,3 +230,58 @@ a:hover {
     }
 
 }
+/* =========================
+Responsive Design
+========================= */
+
+/* Tablet Screens */
+@media (max-width: 900px) {
+
+  main {
+    padding: 2rem;
+  }
+
+  .section__container,
+  .section__container-reverse {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section__text-container,
+  .section__img-container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+}
+
+/* Mobile Screens */
+@media (max-width: 600px) {
+
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .nav__menu {
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+}
