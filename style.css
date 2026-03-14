@@ -187,14 +187,14 @@ header {
 }
 
 .hero--players {
-    height: 50vh;
+    height: 60vh;
     background-image: 
         linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.55)),
         url(assets/img/gators-teamphoto.jpg);
 }
 
 .hero--traditions {
-    height: 50vh;
+    height: 60vh;
     background-image: 
         linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.55)),
         url(assets/img/gator-walk.jpg);
