@@ -75,7 +75,14 @@ nav {
 
 /* ========== Font Styles ========== */
 
-h1,
+h1 {
+    font-family: "factoria", serif;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 0.05em;
+}
+
+
 h2 {
     font-family: var(--large-heading-font);
 }
@@ -85,9 +92,10 @@ h3 {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
+    color: var(--white)
 }
 
 h2 {
@@ -103,7 +111,7 @@ h3 {
     color: var(--core-blue);
 }
 
-.caption {
+.section__caption {
     font-size: 0.9rem;
     color: var(--caption-grey);
     text-align: center;
@@ -135,6 +143,13 @@ header {
 
 .nav__logo img {
     height: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.nav__logo img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.1);
 }
 
 /* NAV LINKS */
@@ -155,6 +170,37 @@ header {
     border-bottom: 3px solid var(--core-orange);
     text-decoration: none;
 }
+
+
+/* ========== Hero Section ========== */
+
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero--players {
+    height: 60vh;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.55)),
+        url(assets/img/gators-teamphoto.jpg);
+}
+
+.hero--traditions {
+    height: 60vh;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.55)),
+        url(assets/img/gator-walk.jpg);
+}
+
+
 
 /* ========== General Links ========== */
 
@@ -199,16 +245,20 @@ a:hover {
 .section__container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     margin-top: 1rem;
 }
 
-.section__container-reverse {
-    display: flex;
-    justify-content: space-between;
+.section__container--center {
+    align-items: center;
+}
+
+.section__container--flex-start {
     align-items: flex-start;
+}
+
+
+.section__container--reverse {
     flex-direction: row-reverse;
-    margin-top: 1rem;
 }
 
 .section__text-container {
@@ -225,7 +275,7 @@ a:hover {
     height: auto;
 }
 
-.section__container-column {
+.section__container--column {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
@@ -251,17 +301,79 @@ a:hover {
 
 /* ========== Rivalries Images ========== */
 
-.section__text-container_rivalries {
+.section__text-container--rivalries {
     width: 70%;
     object-fit: cover;
 }
 
-.section__img-container_rivalries {
+.section__img-container--rivalries {
     width: 25%;
     object-fit: cover;
 }
 
-.section__img-container_rivalries img {
+.section__img-container--rivalries img {
     width: 100%;
     height: auto;
+}
+
+/* ========== Players Page ========== */
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.player-card {
+    border: 2px solid var(--core-orange);
+    padding: 1rem;
+    background: var(--white);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    transition: all 0.2s ease;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.player-card__image {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+}
+
+.player-card__number {
+    color: var(--core-orange);
+    font-family: var(--small-heading-font);
+    margin-bottom: 0.0625rem;
+}
+
+.player-card__name {
+    color: var(--core-blue);
+    margin-bottom: 0.75rem;
+}
+
+.player-card__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem 1rem;
+}
+
+.player-card__stats p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.stat-label {
+    font-family: var(--small-heading-font);
+    color: var(--core-blue);
+    margin-right: 0.25rem;
 }
