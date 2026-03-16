@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Players</title>
+    <meta name="description" content="Florida Gators football roster, featuring profiles of key offensive and defensive players, including their positions, stats, and backgrounds.">
+    <title>Florida Gators Football - Players</title>
 
     <!-- ===== Universal stylesheets, put on ALL PAGES ===== -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- This is the source of the website body font -->
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@400;600&display=swap" rel="stylesheet"> <!-- This is the source of the website headings font --> 
-    <link rel="stylesheet" href="https://use.typekit.net/kve0lbd.css"> <!-- This is the source of the website hero font -->
+
+    <link rel="preload" href="assets/fonts/IBMPlexSans-VariableFont_wdth,wght.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Factoria-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" href="assets/img/gators-teamphoto.webp">
+
+
 </head>
 <body>
    <!-- Header, put on ALL PAGES -->
     <header class="header">
+
         <nav class="nav">
-            <a href="index.html" class="nav__logo"><img src="assets/img/florida-gators-logo-png-transparent.png" alt="Florida Gators logo"></a>
+
+            <a href="index.html" class="nav__logo" aria-label="Florida Gators Football Home">
+                <img 
+                    src="assets/img/florida-gators-logo-png-transparent.webp"
+                    alt="Florida Gators Logo"
+                    height="50"
+                    width="79"
+                >
+            </a>
 
             <div class="nav__menu">
                 <a class="nav__link" href="index.html">Home</a>
                 <a class="nav__link" href="players.html">Players</a>
                 <a class="nav__link" href="traditions.html">Traditions</a>
             </div>
+
         </nav>
+
     </header>
 
 
@@ -32,14 +47,14 @@
 
     <main>
         <section class="section">
-            <h2>Offensive Players</h2>
+            <h2 class="players-grid__header">Offensive Players</h2>
             
             <section class="players-grid">
 
                 <!-- Row 1-->
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/tramell-jones-jr.jpg" alt="Tramell Jones Jr.">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/tramell-jones-jr.webp" alt="Tramell Jones Jr.">
                     <p class="player-card__number">#9</p>
                     <h3 class="player-card__name">Tramell Jones Jr.</h3>
 
@@ -61,7 +76,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/aaron-williams.jpg" alt="Aaron Williams">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/aaron-williams.webp" alt="Aaron Williams">
                     <p class="player-card__number">#10</p>
                     <h3 class="player-card__name">Aaron Williams</h3>
 
@@ -83,7 +98,7 @@
                 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/will-griffin.jpg" alt="Will Griffin">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/will-griffin.webp" alt="Will Griffin">
                     <p class="player-card__number">#11</p>
                     <h3 class="player-card__name">Will Griffin</h3>
 
@@ -106,7 +121,7 @@
                 <!-- Row 2 -->
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/aaron-philo.jpg" alt="Aaron Philo">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/aaron-philo.webp" alt="Aaron Philo">
                     <p class="player-card__number">#12</p>
                     <h3 class="player-card__name">Aaron Philo</h3>
 
@@ -128,7 +143,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/jadan-baugh.jpg" alt="Jadan Baugh">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/jadan-baugh.webp" alt="Jadan Baugh">
                     <p class="player-card__number">#13</p>
                     <h3 class="player-card__name">Jadan Baugh</h3>
 
@@ -150,7 +165,7 @@
                 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/duke-clark.jpg" alt="Duke Clark">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/duke-clark.webp" alt="Duke Clark">
                     <p class="player-card__number">#20</p>
                     <h3 class="player-card__name">Duke Clark</h3>
 
@@ -173,7 +188,7 @@
                 <!-- Row 3 -->
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/evan-pryor.jpg" alt="Evan Pryor">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/evan-pryor.webp" alt="Evan Pryor">
                     <p class="player-card__number">#21</p>
                     <h3 class="player-card__name">Evan Pryor</h3>
 
@@ -195,7 +210,7 @@
                 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/london-montgomery.jpg" alt="London Montgomery">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/london-montgomery.webp" alt="London Montgomery">
                     <p class="player-card__number">#24</p>
                     <h3 class="player-card__name">London Montgomery</h3>
 
@@ -217,7 +232,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/byron-louis.jpg" alt="Byron Louis">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/byron-louis.webp" alt="Byron Louis">
                     <p class="player-card__number">#27</p>
                     <h3 class="player-card__name">Byron Louis</h3>
 
@@ -240,7 +255,7 @@
                 <!-- Row 4 -->
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/vernell-brown-iii.jpg" alt="Vernell Brown III">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/vernell-brown-iii.webp" alt="Vernell Brown III">
                     <p class="player-card__number">#1</p>
                     <h3 class="player-card__name">Vernell Brown III</h3>
 
@@ -262,7 +277,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/eric-singleton-jr.jpg" alt="Eric Singleton Jr.">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/eric-singleton-jr.webp" alt="Eric Singleton Jr.">
                     <p class="player-card__number">#2</p>
                     <h3 class="player-card__name">Eric Singleton Jr.</h3>
 
@@ -284,7 +299,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/tj-abrams.jpg" alt="TJ Abrams">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/tj-abrams.webp" alt="TJ Abrams">
                     <p class="player-card__number">#4</p>
                     <h3 class="player-card__name">TJ Abrams</h3>
 
@@ -307,7 +322,7 @@
                 <!-- Row 5 -->
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/dallas-wilson.jpg" alt="Dallas Wilson">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/dallas-wilson.webp" alt="Dallas Wilson">
                     <p class="player-card__number">#6</p>
                     <h3 class="player-card__name">Dallas Wilson</h3>
 
@@ -329,7 +344,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/amir-jackson.jpg" alt="Amir Jackson">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/amir-jackson.webp" alt="Amir Jackson">
                     <p class="player-card__number">#7</p>
                     <h3 class="player-card__name">Amir Jackson</h3>
 
@@ -351,7 +366,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/offensive/luke-harpring.jpg" alt="Luke Harpring">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/offensive/luke-harpring.webp" alt="Luke Harpring">
                     <p class="player-card__number">#15</p>
                     <h3 class="player-card__name">Luke Harpring</h3>
 
@@ -377,14 +392,14 @@
 
         <!-- ===== Defensive Players ===== -->
         <section class="section">
-            <h2>Defensive Players</h2>
+            <h2 class="players-grid__header">Defensive Players</h2>
             
             <section class="players-grid">
 
                 <!-- Row 1-->
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/lj-mccray.jpg" alt="LJ McCray">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/lj-mccray.webp" alt="LJ McCray">
                     <p class="player-card__number">#11</p>
                     <h3 class="player-card__name">LJ McCray</h3>
 
@@ -406,7 +421,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/kamran-james.jpg" alt="Kamran James">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/kamran-james.webp" alt="Kamran James">
                     <p class="player-card__number">#24</p>
                     <h3 class="player-card__name">Kamran James</h3>
 
@@ -428,7 +443,7 @@
                 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/jalen-wiggins.jpg" alt="Jalen Wiggins">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/jalen-wiggins.webp" alt="Jalen Wiggins">
                     <p class="player-card__number">#49</p>
                     <h3 class="player-card__name">Jalen Wiggins</h3>
 
@@ -451,7 +466,7 @@
                 <!-- Row 2 -->
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/jamari-lyons.jpg" alt="Jamari Lyons">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/jamari-lyons.webp" alt="Jamari Lyons">
                     <p class="player-card__number">#95</p>
                     <h3 class="player-card__name">Jamari Lyons</h3>
 
@@ -473,7 +488,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/sebastian-scott.jpg" alt="Sebastian Scott">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/sebastian-scott.webp" alt="Sebastian Scott">
                     <p class="player-card__number">#92</p>
                     <h3 class="player-card__name">Sebastian Scott</h3>
 
@@ -495,7 +510,7 @@
                 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/kendall-guervil.jpg" alt="Kendall Guervil">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/kendall-guervil.webp" alt="Kendall Guervil">
                     <p class="player-card__number">#94</p>
                     <h3 class="player-card__name">Kendall Guervil</h3>
 
@@ -518,7 +533,7 @@
                 <!-- Row 3 -->
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/myles-graham.jpg" alt="Myles Graham">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/myles-graham.webp" alt="Myles Graham">
                     <p class="player-card__number">#5</p>
                     <h3 class="player-card__name">Myles Graham</h3>
 
@@ -540,7 +555,7 @@
                 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/ty-jackson.jpg" alt="Ty Jackson">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/ty-jackson.webp" alt="Ty Jackson">
                     <p class="player-card__number">#7</p>
                     <h3 class="player-card__name">Ty Jackson</h3>
 
@@ -562,7 +577,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/aaron-chiles.jpg" alt="Aaron Chiles">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/aaron-chiles.webp" alt="Aaron Chiles">
                     <p class="player-card__number">#8</p>
                     <h3 class="player-card__name">Aaron Chiles</h3>
 
@@ -585,7 +600,7 @@
                 <!-- Row 4 -->
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/jaden-robinson.jpg" alt="Jaden Robinson">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/jaden-robinson.webp" alt="Jaden Robinson">
                     <p class="player-card__number">#29</p>
                     <h3 class="player-card__name">Jaden Robinson</h3>
 
@@ -607,7 +622,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/onis-konanbanny.jpg" alt="Onis Konanbanny">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/onis-konanbanny.webp" alt="Onis Konanbanny">
                     <p class="player-card__number">#3</p>
                     <h3 class="player-card__name">Onis Konanbanny</h3>
 
@@ -629,7 +644,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/jvari-flowers.jpg" alt="J'Vari Flowers">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/jvari-flowers.webp" alt="J'Vari Flowers">
                     <p class="player-card__number">#6</p>
                     <h3 class="player-card__name">J'Vari Flowers</h3>
 
@@ -652,7 +667,7 @@
                 <!-- Row 5 -->
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/ben-hanks-iii.jpg" alt="Ben Hanks III">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/ben-hanks-iii.webp" alt="Ben Hanks III">
                     <p class="player-card__number">#12</p>
                     <h3 class="player-card__name">Ben Hanks III</h3>
 
@@ -674,7 +689,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/cj-bronaugh.jpg" alt="CJ Bronaugh">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/cj-bronaugh.webp" alt="CJ Bronaugh">
                     <p class="player-card__number">#15</p>
                     <h3 class="player-card__name">CJ Bronaugh</h3>
 
@@ -696,7 +711,7 @@
 
                 <article class="player-card">
 
-                    <img class="player-card__image" src="assets/img/players/defensive/bryce-thornton.jpg" alt="Bryce Thornton">
+                    <img class="player-card__image" loading="lazy" src="assets/img/players/defensive/bryce-thornton.webp" alt="Bryce Thornton">
                     <p class="player-card__number">#1</p>
                     <h3 class="player-card__name">Bryce Thornton</h3>
 
