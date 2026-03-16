@@ -194,7 +194,7 @@ header {
     height: 60vh;
     background-image: 
         linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.55)),
-        url(assets/img/gators-teamphoto.jpg);
+        url(assets/img/gators-teamphoto.webp);
 }
 
 .hero--traditions {
@@ -317,10 +317,15 @@ a:hover {
 
 /* ========== Players Page ========== */
 
+
 .players-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+}
+
+.players-grid__header {
+    text-align: center;
 }
 
 .player-card {
@@ -348,7 +353,7 @@ a:hover {
 }
 
 .player-card__number {
-    color: var(--core-orange);
+    color: #c63b12;
     font-family: var(--main-font);
     font-weight: var(--font-bold);
 }
@@ -370,7 +375,6 @@ a:hover {
 }
 
 .stat-label {
-    font-family: var(--main-font);
     font-weight: var(--font-medium);
     color: var(--core-blue);
 }
