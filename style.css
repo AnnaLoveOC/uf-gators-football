@@ -448,6 +448,10 @@ Responsive Design
   }
 }
 
+.section__text-container--bullet-title {
+    font-weight: var(--font-bold);
+}
+
 /* Mobile Screens */
 @media (max-width: 600px) {
 
