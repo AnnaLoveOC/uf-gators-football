@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "IBM Plex Sans -- Italic";
-    src: url("assets/fonts/IBMPlexSans-Italic.woff2") format("woff2");
+    src: url("assets/fonts/ibm-plex-sans.italic.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -29,7 +29,7 @@ VARIABLE STYLESHEET
     --core-orange: #fa4616;
     --core-blue: #0021a5;
     --white: #ffffff;
-    --caption-grey: #848484;
+    --caption-grey: #6b6b6b;
 
     --main-font: "IBM Plex Sans", sans-serif;
     --caption-font: "IBM Plex Sans -- Italic", sans-serif;
@@ -201,7 +201,7 @@ header {
     height: 60vh;
     background-image: 
         linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.55)),
-        url(assets/img/gator-walk.jpg);
+        url(assets/img/gator-walk.webp);
 }
 
 .hero--home {
@@ -313,6 +313,7 @@ a:hover {
 
 .section__img-container--rivalries img {
     width: 100%;
+    height: auto;
 }
 
 /* ========== Players Page ========== */
