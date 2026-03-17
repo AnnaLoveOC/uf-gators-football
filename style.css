@@ -399,6 +399,7 @@ Responsive Design
 
 /* Tablet Screens */
 @media (max-width: 900px) {
+    
 
   main {
     padding: 2rem;
@@ -411,7 +412,9 @@ Responsive Design
   }
 
   .section__text-container,
-  .section__img-container {
+  .section__img-container,
+  .section__text-container--rivalries,
+  .section__img-container--rivalries{
     width: 100%;
   }
 
@@ -421,6 +424,10 @@ Responsive Design
 
   h2 {
     font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
   }
 
   .nav__menu {
@@ -460,11 +467,13 @@ Responsive Design
     height: auto;
     padding: 1rem 0;
     gap: 1rem;
+
   }
 
   .nav__menu {
     flex-direction: column;
     gap: 1.5rem;
+    align-items: center;
   }
 
   h1 {
@@ -477,6 +486,10 @@ Responsive Design
 
   main {
     padding: 1rem 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 
   .section__caption {
@@ -492,6 +505,10 @@ Responsive Design
   .hero--players,
   .hero--traditions {
     height: 40vh;
+  }
+
+  .hero__container {
+    max-width: 90%;
   }
 
   .players-grid {
